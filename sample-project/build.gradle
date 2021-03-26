@@ -1,0 +1,46 @@
+plugins {
+    id 'application' 
+}
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy'
+    implementation 'com.google.zxing:core'
+    implementation 'com.google.zxing:javase'
+    implementation 'com.googlecode.json-simple:json-simple'
+    implementation 'com.googlecode.libphonenumber:libphonenumber'
+
+    implementation 'net.sf.jung:jung-graph-impl'
+    implementation 'net.sf.jung:jung-io'
+    implementation 'net.sf.opencsv:opencsv'
+    implementation 'org.ahocorasick:ahocorasick'
+    implementation 'org.assertj:assertj-core'
+    implementation 'org.atteo:evo-inflector'
+    implementation 'org.eclipse.jetty:jetty-server'
+    implementation 'org.eclipse.jetty:jetty-servlet'
+    implementation 'org.glassfish.jersey.test-framework.providers:jersey-test-framework-provider-grizzly2'
+    implementation 'org.hamcrest:hamcrest-all'
+    implementation 'org.javassist:javassist'
+    implementation 'org.jetbrains:annotations'
+    implementation 'org.jruby:dirgra'
+    implementation 'org.junit.vintage:junit-vintage-engine'
+    implementation 'org.reflections:reflections'
+    implementation 'javax.activation:activation'
+    implementation 'javax.inject:javax.inject'
+    implementation 'javax.validation:validation-api'
+    implementation 'javax.annotation:javax.annotation-api'
+    implementation 'javax.servlet:javax.servlet-api'
+    implementation 'javax.ws.rs:javax.ws.rs-api'
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api'
+
+    testImplementation 'junit:junit'
+}
+
+application {
+    mainClass = 'demo.App'
+}
