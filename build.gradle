@@ -1,6 +1,6 @@
 
 plugins {
-    id "com.palantir.consistent-versions" version "1.28.0"
+//    id "com.palantir.consistent-versions" version "1.28.0"
 }
 
 repositories {
@@ -11,4 +11,4 @@ repositories {
      jcenter()
 }
 
-apply plugin: "com.palantir.consistent-versions"
+//apply plugin: "com.palantir.consistent-versions"
